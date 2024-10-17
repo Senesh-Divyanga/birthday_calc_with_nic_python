@@ -1,10 +1,10 @@
-# get user input
+# get nic number as a user input
 
 
 # validate user input
 
 
-# identify the year
+# identify the born year
 
 
 # find the date of birth
