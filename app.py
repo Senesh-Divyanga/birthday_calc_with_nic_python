@@ -4,10 +4,12 @@ nic_number = input("Enter your NIC number: ")
 
 # validate user input
 
-if len(nic_number) != 12 and nic_number.is_integer() == False:
-    print("Invalid NIC number")
-else:
-    print("Valid NIC number")
+def validate_nic(nic : str) -> bool:
+    nic_length = len(nic)
+    if nic_length == 12 and nic.isnumeric() == True:
+        print("Valid NIC number")
+    else:
+        print("Invalid NIC number")
 
 # identify the born year
 
@@ -20,3 +22,4 @@ def get_born_year():
 
 # display output
 
+validate_nic(nic_number)
